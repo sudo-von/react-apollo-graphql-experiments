@@ -2,7 +2,7 @@ import React  from 'react'
 /* Apollo. */
 import { ApolloProvider } from 'react-apollo'
 /* Helpers. */
-import { client } from './helpers/graphql-helper'
+import { client } from './helpers/apollo-helper'
 /* Screens. */
 import Github from './screens/Github'
 
