@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import React  from 'react'
+/* Apollo. */
+import { ApolloProvider } from 'react-apollo'
+import { ApolloClient } from 'apollo-client'
+import { HttpLink } from 'apollo-link-http'
+import { InMemoryCache } from 'apollo-cache-inmemory'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const token = process.env.REACT_APP_TOKEN
+
+const httpLink = {
+  hri: 'https://api.github.com/graphql',
+  headers: {
+    authorization: `Bearer ${token}`
+  }
 }
 
-export default App;
+const client = new ApolloClient({
+  link: new HttpLink(httpLink),
+  cache: new InMemoryCache()
+})
+
+const App = () => (
+  <ApolloProvider client={client}>
+    <div>
+      asdsad
+    </div>
+  </ApolloProvider>
+)
+
+export default App
