@@ -11,8 +11,8 @@ import { Client as Styletron } from 'styletron-engine-atomic'
 /* Atomize. */
 import { StyleReset } from 'atomize'
 
-const debug = process.env.NODE_ENV === "production" ? void 0 : new DebugEngine()
-  
+/* Ignore this, it's just for styletron. */
+const debug = new DebugEngine()
 const engine = new Styletron()
 
 const App = () => (
