@@ -1,5 +1,5 @@
-# ![React apollo graphql experiments](https://github.com/sudo-von/react-apollo-graphql-experiments)
 # React apollo graphql experiments
+
 <table>
     <tr>
         <td>This project serves as example to consume the Graphql API from Github using the apollo client.</td>
