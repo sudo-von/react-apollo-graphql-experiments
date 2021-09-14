@@ -19,16 +19,16 @@
 git clone https://github.com/sudo-von/react-apollo-graphql-experiments.git
 ```
 
-2. Install npm dependencies.
+2. <b>Install</b> npm dependencies.
 ```sh
 npm install
 ```
 
-3. Rename the .env.sample to .env and set your github token.
+3. <b>Rename</b> the .env.sample to .env and set your github token.
 If you don't know how to generate your token you can follow the next link:
 https://github.blog/2013-05-16-personal-api-tokens/
 
-4. Start the project.
+4. <b>Start</b> the project.
 ```sh
 npm start
 ```
